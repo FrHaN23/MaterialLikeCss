@@ -1,0 +1,400 @@
+body{
+    background-color:rgb(17, 17, 17);
+	font-size:16px
+	color: #44444
+	font-family: sans-serif
+}
+ *{
+	 color: white;
+ }
+.content{
+	width: 80%;
+	margin: 10px auto;
+}
+ 
+/*header*/
+header{
+	background-color: #504f4fc2;
+	border-radius: 5px;
+	padding: 5px;
+
+}
+ 
+header h1.judul,
+header h3.deskripsi{
+	text-align: center;	
+}
+ 
+/*menu navigasi*/
+.menu{
+	display: flex;
+	flex-direction: row;
+	flex: 100%;
+}
+ 
+div.menu ul {
+	list-style:none;
+	overflow: hidden;
+	text-align: center;
+}
+ 
+ 
+div.menu ul li {
+	float:left;		
+	text-transform:uppercase;
+	text-align: center;
+}
+ 
+div.menu ul li a {
+	border-radius: 5px;
+	display:flex;
+	padding: 20px;
+	text-decoration:none;
+	color:#d1cfcf;
+	font-family: sans-serif;
+	font-size:13px;
+	font-weight:400;
+	transition:all 0.3s ease-in-out;
+	text-align: center;
+}
+ 
+div.menu ul li a:hover {	
+	color:#fff;
+	text-decoration: underline;
+	background-color: #8d8d8d ;
+	
+}
+ 
+ 
+div.badan{
+	background-color:#232323;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	display: flex;
+	flex-wrap: nowrap;
+	color: white;
+}
+.badankanan{
+	background-color: #000000;
+	float: left;
+	border: 1px black;
+	padding: 10px;
+	border-radius: 5px;
+
+}
+.badankanan ul{
+	list-style:none;
+	overflow: hidden;
+}
+.badankanan ul li{		
+	text-transform:uppercase;
+	text-align: center;
+}
+.badankanan ul li a{
+	display:block;	
+	padding:0 20px;
+	text-decoration:underline;
+	color:#2c2c2c;
+	font-family: sans-serif;
+	font-size:13px;
+	font-weight:400;
+	transition:all 0.3s ease-in-out;
+}
+.badankanan ul li a:hover,.badan ul li a.hoverover{
+	cursor: pointer;	
+	color:#fff;
+}
+
+ 
+.middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+  }
+.imgcontainer{
+	position: relative;
+}
+.imgcontainer:hover .imgbg{
+	opacity: 0.3;
+}
+.container:hover .middle {
+	opacity: 1;
+  }
+.imgbg{
+	opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+}
+.txtmid{
+	background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  position:absolute;
+
+}
+
+.bg-image {
+	background-image: url("assets/img/bg.png");
+	filter: blur(8px);
+	-webkit-filter: blur(8px);
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+  .bg-image:hover {
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0, 0.4);
+	color: white;
+	font-weight: bold;
+	border: 3px solid #f1f1f1;
+	position: absolute;
+	z-index: 2;
+	width: 80%;
+	padding: 20px;
+	text-align: center;
+  }
+.container-baris{
+	display: flex;
+	flex-wrap: nowrap;
+	text-align: center;
+	flex-direction: row;
+	color: honeydew;
+	margin:30px;
+}
+.container.kolom{
+	display:flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	margin: 20px;
+}
+
+.isikiri{
+	flex: 50%;
+	padding: 10px ;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+.isikanan{
+	flex: 50%;
+	padding:10px;
+	margin-bottom: 5px;
+}
+.jumbotron {
+    left: 0 !important;
+    right: 0em;
+    bottom: 0em;
+    padding-top: 10px;
+}
+
+.bg-text-container{
+	
+	background-image: url('assets/img/banner.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.bg-text-container-find{
+
+	background-image: url('assets/img/bg-map.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg-text-container-underConstruct{
+	
+	background-image: url('assets/img/under.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg-text-container-tetang{
+	
+	background-image: url('assets/img/tetang.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg-text-container-login{
+	
+	background-image: url('assets/img/bg-login.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.imgbgmenu{
+
+	background-image: url('assets/img/banner-menu.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+
+.bg-text{
+	color: white;
+	text-align: center;
+	outline: thin;
+	padding: 15px;
+	font-family: Verdana, Arial, Tahoma, Serif;
+	font-weight: bold;
+	font-size: large;
+	flex: 100%;
+	
+}
+.bg-container-menu{
+
+	background-color: #4CAF50;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.bar{
+	
+	background: rgba(14, 14, 14, 0.500);
+	padding: 150px;
+	
+}
+.bar-besar-login{
+	
+	background: rgba(14, 14, 14, 0.500);
+	padding: 350px;
+	padding-right: 100px;
+	
+}
+.bar-menu{
+	
+	background: rgba(14, 14, 14, 0.500);
+	padding: 150px;
+	
+}
+.bar-findus{
+	
+	background: rgba(14, 14, 14, 0.500);
+	padding: 1080px;
+	
+}
+.bar-besar-err{
+	
+	background: rgba(14, 14, 14, 0.500);
+	padding: 500px;
+	
+}
+.bar-besar-errConst{
+	
+	background: rgba(14, 14, 14, 0.500);
+	padding: 800px;
+	
+}
+.bar-tetang{
+	
+	background: rgba(14, 14, 14, 0.750);
+	padding: 150px;
+	
+}
+.text-atas{
+	margin:30px;
+}
+.margin{
+	margin-left: 100px;
+	margin-right: 100px;
+	margin: 40px;
+}
+.margin-err{
+	margin-left: 100px;
+	margin-right: 100px;
+	margin: 20px;
+}
+.bttn1{
+	border-radius: 5px;
+	width: 150px;
+	padding: 5px;
+	background-color:#4d4d4d;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-bottom: 5px;
+	margin-left: auto;
+	transition:all 0.3s ease-in-out;
+	text-decoration: none;
+}
+.bttn2{
+	border-radius: 5px;
+	width: 150px;
+	padding: 5px;
+	background-color:#4d4d4d;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-bottom: 5px;
+	margin-left: auto;
+	transition:all 0.3s ease-in-out;
+	text-decoration: none;
+}
+.bttn3{
+	border-radius: 5px;
+	width: 90px;
+	height: 60px;
+	padding: 1px;
+	background-color:#4d4d4d;
+	justify-content: center;
+	align-items: center;
+	margin-right: auto;
+	margin-left: auto;
+	transition:all 0.3s ease-in-out;
+	text-decoration: none;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+.bttn1:hover {	
+	color:#fff;
+	background-color:rgb(240, 132, 31) ;
+	transition:all 0.3s ease-in-out;
+	
+}
+
+.bttn2:hover {	
+	color:#fff;
+	background-color: #ebd423 ;
+	transition:all 0.3s ease-in-out;
+	
+}
+.bttn3:hover {	
+	
+	background-color:rgb(228, 140, 8) ;
+	transition:all 0.3s ease-in-out;
+	color: #000000;
+	
+}
+#hub{
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	text-decoration: underline;
+}
+#sosmed :hover{
+	text-decoration: underline;
+}
+p{
+	font-weight: bold;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: larger;
+}
+.text-login{
+	color: black;
+}
+
